@@ -8,6 +8,8 @@ $(window).on("load", function() {
     if ($("#G8_map1 > li.G8_kanri").on("click")) {
       $(".contents_kanri").show();
       $(".map_serect").show();
+      $(".user_kanri").show();
+      $(".show_map").show();
       $(".G8_kouti_kanri").show();
     }
   });
@@ -18,6 +20,8 @@ $(window).on("load", function() {
     $(".contents_kanri .map_serect div").hide(); // 二つの要素を非表示にする
     $(".contents_kanri").show();
     $(".map_serect").show();
+    $(".user_kanri").show();
+    $(".show_map").show();
     $("." + this.id).show(); // クリックされたボタンに対応する要素を表示する
   });
 });

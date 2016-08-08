@@ -2,9 +2,15 @@ body{
   background-color: #f5f5f5;
 }
 
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 .tab-menu {
   width: 1000px;
-  margin-left: 60px;
+  margin-left: 30px;
 
   p {
     font-color: red;
@@ -13,7 +19,7 @@ body{
   ul { /* .tab-menuの中のulに対する記述 */
     margin: 0;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
   li { /* .tab-menuの中のli */
@@ -38,8 +44,8 @@ body{
 
 .contents {
   background-color: #fff;
-  height: 460px;
-  width: 1100px;
+  height: 465px;
+  width: 1165px;
   padding: 10px;
 
   .G8_map{
@@ -103,21 +109,39 @@ body{
     .contents_kanri{
       background-color: #fff;
       height: 380px;
-      width: 1000px;
+      width: 1165px;
       padding: 0px;
 
       .map_serect{
         background-color: #f5f5f5;
         /*border-style:groove;*/
-        height: 400px;
+        height: 365px;
         width: 555px;
         padding: 10px;
+        float: left;
 
         .G8_map_syousai{
           margin-left: 3px;
           margin-top: 0px;
         }
       }
+
+      .show_map{
+        background-color: #f5f5f5;
+        border-style:groove;
+        height: 425px;
+        width: 570px;
+        float: left;
+      }
+
+    }
+
+    .user_kanri{
+      background-color: #fff;
+      border-style:groove;
+      height: 40px;
+      width: 572px;
+      margin-top: 5px;
     }
 
   }
